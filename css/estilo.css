@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poiret One", cursive;
+}
+header {
+  text-align: center;
+}
+footer {
+  background-color: #454545;
+}
+h1 {
+  font-family: "Poiret One", cursive;
+  text-align: center;
+}
+h2 {
+  font-family: "Poiret One", cursive;
+}
+h3 {
+  font-family: "Poiret One", cursive;
+  color: black;
+  padding: 0, 7rem;
+  margin: 0, 7rem;
+}
+.pf {
+  font-family: "Poiret One", cursive;
+  color: black;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 0, 7rem;
+  margin: 0, 7rem;
+}
+nav {
+  padding: 1rem;
+}
+.menu1 {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.menu1 li a {
+  text-decoration: none;
+  padding: 0.7rem;
+  color: black;
+  font-size: 25px;
+}
+.menu1 li a:hover {
+  color: #08f;
+  font-weight: bold;
+}
+.menu2 {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.menu2 li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.1rem;
+}
+.menu2 li a:hover {
+  color: #08f;
+  font-weight: bold;
+}
+.boton {
+  list-style-type: none;
+}
+.boton li a {
+  text-decoration: none;
+  padding: 0.7rem;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1.5px solid;
+}
+.boton li a:hover {
+  border: 2px solid black;
+  font-size: 29px;
+  font-weight: bold;
+}
+.sec2 {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../media/img/FOTOS/ganchos\ -\ fondo.jpg);
+  background-size: cover;
+  font-size: 35px;
+  text-shadow: 0 0 8px white;
+}
+.sec3,
+.sec4 {
+  width: 500px;
+  display: inline-block;
+}
+form {
+  width: 450px;
+  margin: auto;
+  background: #cccecf;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+.formulario h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 17px;
+  border: none;
+  font-family: "Poiret One", cursive;
+  font-weight: bold;
+}
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+#botonc {
+  background: #086cc4;
+  color: #fff;
+  padding: 20px;
+}
+#botonc:hover {
+  cursor: pointer;
+}
+@media (max-widh: 480px) {
+  form {
+    width: 100%;
+  }
+}
+.pagina {
+  width: 90%;
+  height: 90%;
+  text-align: left;
+  margin: auto;
+  justify-content: space-around;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr;
+  gap: 10px;
+  grid-template-areas:
+    "titulo titulo"
+    "tex1 imagen1";
+}
+.titulo {
+  grid-area: titulo;
+}
+.tex1 {
+  grid-area: tex1;
+  font-family: "Shalimar", cursive;
+  font-size: 32px;
+}
+.imagen1 {
+  grid-area: imagen1;
+  justify-items: center;
+}
+@media screen and (max-width: 1000px) {
+  .pagina {
+    grid-template-areas:
+      "titulo titulo"
+      "tex1 tex1"
+      "imagen1 imagen1";
+  }
+}
