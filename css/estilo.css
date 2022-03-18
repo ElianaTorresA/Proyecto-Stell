@@ -83,14 +83,13 @@ nav {
   font-weight: bold;
 }
 .sec2 {
-  height: 400px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../media/img/FOTOS/ganchos\ -\ fondo.jpg);
-  background-size: cover;
   font-size: 35px;
+  font-weight: bold;
   text-shadow: 0 0 8px white;
 }
 .sec3,
