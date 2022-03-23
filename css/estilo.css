@@ -9,12 +9,13 @@ body {
 header {
   text-align: center;
 }
+.header1 {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 footer {
   background-color: #454545;
-}
-h1 {
-  font-family: "Poiret One", cursive;
-  text-align: center;
 }
 h2 {
   font-family: "Poiret One", cursive;
@@ -90,7 +91,7 @@ nav {
   align-items: center;
   font-size: 35px;
   font-weight: bold;
-  text-shadow: 0 0 8px white;
+  text-shadow: 0 0 6px white;
 }
 .sec3,
 .sec4 {
