@@ -1,4 +1,4 @@
-@import "_variables.scss";
+@import "variables";
 
 * {
   margin: 0;
@@ -7,98 +7,93 @@
 }
 body {
   font-family: $fuente-titulo;
-}
-header {
-  text-align: center;
-}
-.header1 {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-footer {
-  background-color: $color-gris;
-}
-h2 {
-  font-family: $fuente-titulo;
-}
-h3 {
-  font-family: $fuente-titulo;
-  color: black;
-  padding: 0, 7rem;
-  margin: 0, 7rem;
-}
-.pf {
-  font-family: $fuente-titulo;
-  color: black;
-  font-size: 19px;
-  font-weight: bold;
-  padding: 0, 7rem;
-  margin: 0, 7rem;
-}
-nav {
-  padding: 1rem;
-}
-.menu1 {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-evenly;
-}
-.menu1 li a {
-  text-decoration: none;
-  padding: 0.7rem;
-  color: black;
-  font-size: 25px;
-}
-.menu1 li a:hover {
-  color: $color-azul;
-  font-weight: bold;
-}
-.menu2 {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.menu2 li a {
-  text-decoration: none;
-  color: white;
-  padding: 0.1rem;
-}
-.menu2 li a:hover {
-  color: $color-azul;
-  font-weight: bold;
-}
-.boton {
-  list-style-type: none;
-}
-.boton li a {
-  text-decoration: none;
-  padding: 0.7rem;
-  color: black;
-  font-size: 25px;
-  font-weight: bold;
-  border: 1.5px solid;
-}
-.boton li a:hover {
-  border: 2px solid black;
-  font-size: 29px;
-  font-weight: bold;
-}
-.sec2 {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 35px;
-  font-weight: bold;
-  text-shadow: 0 0 6px white;
-}
-.sec3,
-.sec4 {
-  width: 500px;
-  display: inline-block;
+  header {
+    text-align: center;
+    .menu1 {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-evenly;
+      li a {
+        text-decoration: none;
+        padding: 0.7rem;
+        color: black;
+        font-size: 25px;
+        &:hover {
+          color: $color-azul;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .header1 {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  nav {
+    padding: 1rem;
+  }
+  h2 {
+    font-family: $fuente-titulo;
+  }
+  main{
+    .boton {
+      list-style-type: none;
+      li a {
+        text-decoration: none;
+        padding: 0.7rem;
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+        border: 1.5px solid;
+        &:hover {
+          border: 2px solid black;
+          font-size: 29px;
+          font-weight: bold;
+        }
+      }
+    }
+    .sec2 {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 35px;
+      font-weight: bold;
+      text-shadow: 0 0 6px white;
+    }
+  }
+  footer {
+    background-color: $color-gris;
+    .pf {
+      font-family: $fuente-titulo;
+      color: black;
+      font-size: 19px;
+      font-weight: bold;
+      padding: 0, 7rem;
+      margin: 0, 7rem;
+    }
+    .menu2 {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      li a {
+        text-decoration: none;
+        color: white;
+        padding: 0.1rem;
+        &:hover {
+          color: $color-azul;
+          font-weight: bold;
+        }
+      }
+    }
+    .sec3, .sec4 {
+      width: 500px;
+      display: inline-block;
+    }
+  }
 }
 form {
   width: 450px;
@@ -132,9 +127,9 @@ textarea {
   background: $color-azul;
   color: #fff;
   padding: 20px;
-}
-#botonc:hover {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
 }
 @media (max-widh: 480px) {
   form {

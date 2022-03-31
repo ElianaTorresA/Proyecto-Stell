@@ -9,46 +9,11 @@ body {
   font-family: "Poiret One", cursive;
 }
 
-header {
+body header {
   text-align: center;
 }
 
-.header1 {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
-footer {
-  background-color: #454545;
-}
-
-h2 {
-  font-family: "Poiret One", cursive;
-}
-
-h3 {
-  font-family: "Poiret One", cursive;
-  color: black;
-  padding: 0, 7rem;
-  margin: 0, 7rem;
-}
-
-.pf {
-  font-family: "Poiret One", cursive;
-  color: black;
-  font-size: 19px;
-  font-weight: bold;
-  padding: 0, 7rem;
-  margin: 0, 7rem;
-}
-
-nav {
-  padding: 1rem;
-}
-
-.menu1 {
+body header .menu1 {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,48 +23,38 @@ nav {
           justify-content: space-evenly;
 }
 
-.menu1 li a {
+body header .menu1 li a {
   text-decoration: none;
   padding: 0.7rem;
   color: black;
   font-size: 25px;
 }
 
-.menu1 li a:hover {
+body header .menu1 li a:hover {
   color: #08f;
   font-weight: bold;
 }
 
-.menu2 {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+body .header1 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
-.menu2 li a {
-  text-decoration: none;
-  color: white;
-  padding: 0.1rem;
+body nav {
+  padding: 1rem;
 }
 
-.menu2 li a:hover {
-  color: #08f;
-  font-weight: bold;
+body h2 {
+  font-family: "Poiret One", cursive;
 }
 
-.boton {
+body main .boton {
   list-style-type: none;
 }
 
-.boton li a {
+body main .boton li a {
   text-decoration: none;
   padding: 0.7rem;
   color: black;
@@ -108,13 +63,13 @@ nav {
   border: 1.5px solid;
 }
 
-.boton li a:hover {
+body main .boton li a:hover {
   border: 2px solid black;
   font-size: 29px;
   font-weight: bold;
 }
 
-.sec2 {
+body main .sec2 {
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,8 +89,45 @@ nav {
   text-shadow: 0 0 6px white;
 }
 
-.sec3,
-.sec4 {
+body footer {
+  background-color: #454545;
+}
+
+body footer .pf {
+  font-family: "Poiret One", cursive;
+  color: black;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 0, 7rem;
+  margin: 0, 7rem;
+}
+
+body footer .menu2 {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body footer .menu2 li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.1rem;
+}
+
+body footer .menu2 li a:hover {
+  color: #08f;
+  font-weight: bold;
+}
+
+body footer .sec3, body footer .sec4 {
   width: 500px;
   display: inline-block;
 }
