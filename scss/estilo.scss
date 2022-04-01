@@ -1,5 +1,10 @@
 @import "variables";
 
+@mixin texto ($size) {
+  font-size: $size;
+  font-weight: bold;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -43,13 +48,11 @@ body {
         text-decoration: none;
         padding: 0.7rem;
         color: black;
-        font-size: 25px;
-        font-weight: bold;
+        @include texto(25px);
         border: 1.5px solid;
         &:hover {
           border: 2px solid black;
-          font-size: 29px;
-          font-weight: bold;
+          @include texto(29px);
         }
       }
     }
@@ -59,8 +62,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-size: 35px;
-      font-weight: bold;
+      @include texto(35px);
       text-shadow: 0 0 6px white;
     }
   }
@@ -69,8 +71,7 @@ body {
     .pf {
       font-family: $fuente-titulo;
       color: black;
-      font-size: 19px;
-      font-weight: bold;
+      @include texto(19px);
       padding: 0, 7rem;
       margin: 0, 7rem;
     }
@@ -113,10 +114,9 @@ input,
 textarea {
   width: 100%;
   margin-bottom: 20px;
-  font-size: 17px;
+  @include texto(17px);
   border: none;
   font-family: $fuente-titulo;
-  font-weight: bold;
 }
 textarea {
   min-height: 100px;
