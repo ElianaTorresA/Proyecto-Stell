@@ -16,13 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Shalimar&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300&family=Tenor+Sans&display=swap"
       rel="stylesheet"
     />
     <link
@@ -36,15 +30,8 @@
   </head>
   <body>
     <header>
-      <div>
-        <a href="../index.html">
-          <img
-            src="../media/img/icon/android-chrome-512x512.png"
-            alt="Logo de la marca"
-            width="120px"
-          />
-        </a>
-        <h1>Stell casa de modas</h1>
+      <div class="inicio">
+        <a href="../index.html"> Stell casa de modas </a>
       </div>
       <section class="sec1">
         <!--El logo es el boton de inicio-->
@@ -81,11 +68,56 @@
           </p>
         </div>
         <div class="imagen1">
-          <img src="../media/img/FOTOS/imagen.png" alt="Mapa del sitio" />
+          <div
+            id="carouselExampleFade"
+            class="carousel slide carousel-fade w-75"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../media/img/FOTOS/como-comprar-1.jpg"
+                  class="d-block w-100"
+                  alt="ropa empacada en una caja"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../media/img/FOTOS/como-comprar-2.jpg"
+                  class="d-block w-100"
+                  alt="ropa enpacada en una caja"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="footer1">
       <section class="sec3">
         <nav>
           <p class="pf">Necesitas ayuda?</p>

@@ -1,4 +1,5 @@
 @import "variables";
+@import "estiloindex";
 
 @mixin texto ($size) {
   font-size: $size;
@@ -14,6 +15,7 @@ body {
   font-family: $fuente-titulo;
   header {
     text-align: center;
+    background-color: $color-claro;
     .menu1 {
       list-style-type: none;
       display: flex;
@@ -161,7 +163,7 @@ textarea {
   grid-column: 1 / 1;
   grid-row: 2 / 2;
   font-family: $fuente-texto;
-  font-size: 32px;
+  font-size: 25px;
 }
 .imagen1 {
   grid-area: imagen1;

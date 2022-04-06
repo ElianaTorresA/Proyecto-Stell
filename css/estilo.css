@@ -1,3 +1,198 @@
+@charset "UTF-8";
+.container1 {
+  padding: 10px;
+  width: 90%;
+  height: 90%;
+  text-align: left;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 30px;
+      grid-template-areas: "inicio inicio"  "nombre nuevo" "hombre mujer" "niño medida" "footer1 footer1";
+}
+
+.inicio {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: inicio;
+  text-decoration: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  background-color: #ecf1fd;
+}
+
+.inicio a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Tenor Sans', sans-serif;
+  padding: 0.7rem;
+  font-size: 45px;
+}
+
+.inicio a:hover {
+  color: #08f;
+  font-size: 46px;
+}
+
+.nombre {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nombre;
+  text-decoration: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.nombre a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Tenor Sans', sans-serif;
+  padding: 0.7rem;
+  font-size: 45px;
+}
+
+.nombre a:hover {
+  color: #08f;
+  font-size: 46px;
+}
+
+.nuevo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: nuevo;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.nuevo:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}
+
+.mujer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: mujer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.mujer:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}
+
+.hombre {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: hombre;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.hombre:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}
+
+.niño {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: niño;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.niño:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}
+
+.medida {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: medida;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.medida:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}
+
+.footer1 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer1;
+  background-color: #ecf1fd;
+  font-family: 'Tenor Sans', sans-serif;
+}
+
+.footer1 .pf {
+  padding: 0, 7rem;
+  margin: 0, 7rem;
+}
+
+.footer1 .menu2 {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer1 .menu2 li a {
+  text-decoration: none;
+  color: black;
+  padding: 0.1rem;
+}
+
+.footer1 .menu2 li a:hover {
+  color: #08f;
+  font-weight: bold;
+}
+
+.footer1 .sec3, .footer1 .sec4 {
+  width: 500px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 770px) {
+  .container1 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "inicio" "nombre" "nuevo" "hombre" "mujer" "niño" "medida" "footer1";
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +201,12 @@
 }
 
 body {
-  font-family: "Poiret One", cursive;
+  font-family: "Tenor Sans", sans-serif;
 }
 
 body header {
   text-align: center;
+  background-color: #ecf1fd;
 }
 
 body header .menu1 {
@@ -47,7 +243,7 @@ body nav {
 }
 
 body h2 {
-  font-family: "Poiret One", cursive;
+  font-family: "Tenor Sans", sans-serif;
 }
 
 body main .boton {
@@ -94,7 +290,7 @@ body footer {
 }
 
 body footer .pf {
-  font-family: "Poiret One", cursive;
+  font-family: "Tenor Sans", sans-serif;
   color: black;
   font-size: 19px;
   font-weight: bold;
@@ -156,7 +352,7 @@ textarea {
   font-size: 17px;
   font-weight: bold;
   border: none;
-  font-family: "Poiret One", cursive;
+  font-family: "Tenor Sans", sans-serif;
 }
 
 textarea {
@@ -216,8 +412,8 @@ textarea {
   grid-column: 1 / 1;
   -ms-grid-row: 2;
   grid-row: 2 / 2;
-  font-family: "Shalimar", cursive;
-  font-size: 32px;
+  font-family: "Sulphur Point", sans-serif;
+  font-size: 25px;
 }
 
 .imagen1 {
@@ -253,7 +449,7 @@ textarea {
     grid-column: 1 / 1;
     -ms-grid-row: 2;
     grid-row: 2 / 2;
-    font-family: "Shalimar", cursive;
+    font-family: "Sulphur Point", sans-serif;
     font-size: 32px;
   }
   .imagen1 {
