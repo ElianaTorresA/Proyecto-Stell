@@ -170,13 +170,15 @@ textarea {
   grid-column: 2 / 2;
   grid-row: 2 / 2;
   justify-items: center;
+  z-index: 0;
 }
 @media screen and (max-width: 760px) {
   .pagina {
+    grid-template-columns: 1fr;
     grid-template-areas:
-      "titulo titulo"
-      "tex1 tex1"
-      "imagen1 imagen1";
+    "titulo"
+    "tex1"
+    "imagen1";
   }
   .titulo {
     grid-area: titulo;
@@ -188,7 +190,7 @@ textarea {
     grid-column: 1 / 1;
     grid-row: 2 / 2;
     font-family: $fuente-texto;
-    font-size: 32px;
+    font-size: 25px;
   }
   .imagen1 {
     grid-area: imagen1;

@@ -114,3 +114,81 @@
     "footer1";
   }
 }
+@media screen and (max-width: 480px) {
+  .container1{ 
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "inicio"
+    "nombre"
+    "nuevo"
+    "hombre"
+    "mujer"
+    "niño"
+    "medida"
+    "footer1";
+  }
+  .inicio {
+    grid-area: inicio;
+    @include nombre-marca;
+    background-color: $color-claro;
+  }
+  .nombre {
+    grid-area: nombre;
+    @include nombre-marca;
+    transform: scale(60%);
+  }
+  .nuevo {
+    grid-area: nuevo;
+    @include cajaindex;
+    transform: scale(60%);
+  }
+  .mujer {
+    grid-area: mujer;
+    @include cajaindex;
+    transform: scale(60%);
+  }
+  .hombre {
+    grid-area: hombre;
+    @include cajaindex;
+    transform: scale(60%);
+  }
+  .niño {
+    grid-area: niño;
+    @include cajaindex;
+    transform: scale(60%);
+  }
+  .medida {
+    grid-area: medida;
+    @include cajaindex;
+    transform: scale(60%);
+  }
+  .footer1 {
+    grid-area: footer1;
+    background-color: $color-claro;
+    font-family: 'Tenor Sans', sans-serif;
+    transform: scale(60%);
+    .pf {
+      padding: 0, 7rem;
+      margin: 0, 7rem;
+    }
+    .menu2 {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      li a {
+        text-decoration: none;
+        color: black;
+        padding: 0.1rem;
+        &:hover {
+          color: $color-azul;
+          font-weight: bold;
+        }
+      }
+    }
+    .sec3, .sec4 {
+      width: 500px;
+      display: inline-block;
+    }
+  }
+}
